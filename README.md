@@ -1,0 +1,2 @@
+# EasyMall
+Java project
