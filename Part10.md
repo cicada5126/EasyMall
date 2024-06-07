@@ -1,0 +1,1 @@
+消息队列的引入，Rabbit的搭建和配置，Springboot整合RabbitMQ ，秒杀功能的实现
