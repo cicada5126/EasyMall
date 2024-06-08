@@ -1,4 +1,4 @@
-## Part2:
+# Part2:
 
 
 
@@ -13,6 +13,16 @@
 ![image-20240606144708292](figs/Part2/parent工程资源.png)
 
 搭建父工程导入相关的基础包。
+
+包括
+
+spring-boot-starter-parent,
+
+spring-boot-starter-web,
+
+spring-cloud-starter-eureka,
+
+spring-cloud-starter-ribbon
 
 #### 2.持久化简化依赖工程（easymall-common-repository）
 
@@ -200,3 +210,7 @@ Druid 的 DataSource
 #### 商品新增功能
 
 #### 商品修改功能
+
+理清功能的业务逻辑
+
+学习过程都是一样的
