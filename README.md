@@ -39,6 +39,8 @@ IntelliJ IDEA Community Edition 2024.1.1
 
 10. [消息队列的引入，Rabbit的搭建和配置，Springboot整合RabbitMQ ，秒杀功能的实现](Part10.md)
 
+11. nginx和host配置
+
     ------
 
 由于没有保存各Part学习任务的代码，无法进行对应的运行。
