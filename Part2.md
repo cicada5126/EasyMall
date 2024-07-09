@@ -88,7 +88,7 @@ Druid 的 DataSource
 
 代码编写：
 
-![img](file:///C:\Users\86136\AppData\Local\Temp\ksohtml57852\wps7.jpg) 
+
 
 > `@RestController`：是一个注解，标记这个类是一个Controller组件，用于处理HTTP请求。`@RestController`是`@Controller`和`@ResponseBody`的组合，表示这个类中的方法返回的数据直接作为响应体返回。
 >
@@ -116,13 +116,9 @@ Druid 的 DataSource
 
 ###### 3.Service层ProductService
 
-![img](file:///C:\Users\86136\AppData\Local\Temp\ksohtml57852\wps8.jpg) 
-
 ###### 4.Dao层ProductMapper
 
 多个参数时,可以使用@Param注解,定义参数在sql预编译时使用
-
-![img](file:///C:\Users\86136\AppData\Local\Temp\ksohtml57852\wps9.jpg) 
 
 > `@Param`注解在Spring框架中并不是一个内置的注解，它可能是某些项目或框架中自定义的注解，用于特定的用途。然而，Spring框架中有一个与之相似的注解叫做`@RequestParam`，它用于将Web请求中的参数绑定到控制器方法的参数上。
 >
@@ -137,8 +133,6 @@ Druid 的 DataSource
 
 ###### 5.映射文件ProductMapper.xml 
 
-![img](file:///C:\Users\86136\AppData\Local\Temp\ksohtml57852\wps10.jpg) 
-
 ##### 单独测试：
 
 > http://localhost:10001/product/manage/pageManage?page=1&rows=2
@@ -151,7 +145,7 @@ Druid 的 DataSource
 
 主要步骤为
 
-1. 创建一个网关工程easymall-micro-zuu
+1. 创建一个网关工程easymall-micro-zuul
 2. 在host文件中配置www.easymall.com
 3. 在Nginx中配置静态界面
 4. 将easymall-static复制到d:\java\nginx-1.9.9中

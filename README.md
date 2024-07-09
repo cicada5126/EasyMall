@@ -15,6 +15,16 @@ or:
 
 IntelliJ IDEA Community Edition 2024.1.1
 
+
+
+IDE配置：
+
+java JDK : jdk1.8.0_101
+
+maven仓库：ali_repo
+
+
+
 ------
 
 各Part学习任务：
@@ -39,10 +49,24 @@ IntelliJ IDEA Community Edition 2024.1.1
 
 10. [消息队列的引入，Rabbit的搭建和配置，Springboot整合RabbitMQ ，秒杀功能的实现](Part10.md)
 
-11. nginx和host配置
+11. [nginx和host配置](nginx和host配置.md)
 
     ------
 
-由于没有保存各Part学习任务的代码，无法进行对应的运行。
+> 由于没有保存各Part学习任务的代码，无法进行对应的运行。
+>
+> 尝试学习完最主要的部分，梳理这套代码的主要功能和技术点。
 
-尝试学习完最主要的部分，梳理这套代码的主要功能和技术点。
+项目运行指南，完成IDE的基本配置如java和maven后，以IDEA为例：
+
+点击pom.xml文件添加为maven项目
+
+![image-20240709165827471](../../AppData/Roaming/Typora/typora-user-images/image-20240709165827471.png)
+
+执行maven生命周期的clean和install安装依赖查看是否正常。
+
+![image-20240709165939019](../../AppData/Roaming/Typora/typora-user-images/image-20240709165939019.png)
+
+确保项目的依赖选项如configserver、两个eurake；服务器数据库mycat、JedisCluster等已经成功开启后点击Stater进行启动项目
+
+![image-20240709170153610](../../AppData/Roaming/Typora/typora-user-images/image-20240709170153610.png)
