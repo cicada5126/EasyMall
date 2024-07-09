@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.scnu.product.mapper.ProductMapper">
+<select id="queryTotal" resultType="Integer">
+select count(product_id) from t_product
+</select>
+<select id="productByPage" resultType="Product">
+select * from t_product limit #{start},#{rows}
+</select>
+<select id="queryById" resultType="Product" parameterType="String">
+	select * from t_product where product_id=#{productId}
+</select>
+<insert id="productSave" parameterType="Product">
+	insert into t_product(product_id,product_name,product_category,product_num,
+	product_imgurl,product_price,product_description)
+	values(#{productId},#{productName},#{productCategory},#{productNum},#{productImgurl},#{productPrice},
+	#{productDescription})
+</insert>
+<update id="productUpdate" parameterType="Product">
+	update t_product set
+		product_name=#{productName},
+		product_price=#{productPrice},
+		product_category=#{productCategory},
+		product_imgurl=#{productImgurl},
+		product_num=#{productNum},
+		product_description=#{productDescription}
+		where product_id=#{productId}
+
+</update>
+</mapper>
+
