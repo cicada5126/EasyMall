@@ -56,7 +56,7 @@ public class UserController {
 				CookieUtils.setCookie(request,response,"EM_TICKET", ticket);
 				return SysResult.ok(); }
 			else {
-				//直接返回番录失败
+				//直接返回登录失败
 				return SysResult.build(201,"登录失败",null);
 			}
 			

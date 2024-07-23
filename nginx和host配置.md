@@ -1,3 +1,5 @@
+# nginx和host配置
+
 # switchhost
 
 首先需要使用switchhost配置本地内网ip到域名的跳转

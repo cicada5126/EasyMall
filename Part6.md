@@ -116,3 +116,31 @@ Redis Cluster要求一个集群最少需要3个主节点(最少的集群容忍�
 4. springboot整合JedisCluster操作集群
 
 ![image-20240609225207822](figs/Part6/jediscluster.png)
+
+开启JedisCluster服务操作如下：
+
+## 启动节点
+
+启动redis集群，查看nodes,三主三从6个节点正常。
+
+进入redis文件夹
+
+cd /home/software/redis-3.2.11/
+
+启动配置文件
+
+redis-server 8000/redis-cluster.conf 
+
+查看启动情况
+
+ps -ef|grep redis
+
+打开对应节点
+
+redis-cli -c -p 8000 -h 192.168.126.128
+
+![image-20240722150307512](../../AppData/Roaming/Typora/typora-user-images/image-20240722150307512.png)
+
+## 启动端口
+
+![img](file:///C:\Users\86136\AppData\Local\Temp\ksohtml3584\wps2.jpg) 

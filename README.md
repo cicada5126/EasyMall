@@ -23,7 +23,7 @@ java JDK : jdk1.8.0_101
 
 maven仓库：ali_repo
 
-
+版本maven3.6
 
 ------
 
